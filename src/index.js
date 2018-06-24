@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "normalize.css";
 import "./styles/styles.css";
-import App from "./App";
+import AppRouter from "../src/router/AppRouter";
 
 import { database } from "./firebase/firebase";
 
@@ -18,5 +18,5 @@ database()
   .ref()
   .set({ name: "osama" });
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<AppRouter />, document.getElementById("root"));
 registerServiceWorker();
